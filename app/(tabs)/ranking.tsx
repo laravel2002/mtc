@@ -1,11 +1,9 @@
 import { View, Text, StyleSheet } from 'react-native';
 
-// ĐẢM BẢO export default function ở đây
-export default function ExploreScreen() {
+export default function RankingScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Màn hình Khám Phá (Trang chủ)</Text>
-      <Text style={{color: '#8E8E93', marginTop: 10}}>*Sẽ ráp API vào sau*</Text>
+      <Text style={styles.text}>Màn hình Xếp Hạng</Text>
     </View>
   );
 }

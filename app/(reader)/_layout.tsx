@@ -1,13 +1,13 @@
 import { Stack } from 'expo-router';
+import { StatusBar } from 'react-native';
 
 export default function ReaderLayout() {
   return (
-    <Stack
-      screenOptions={{
-        headerShown: false,
-        // Reader mode: ẩn hoàn toàn header, tạo trải nghiệm đọc toàn màn hình
-        animation: 'slide_from_bottom',
-      }}
-    />
+    <>
+      <StatusBar hidden={true} /> {/* Ẩn thanh trạng thái điện thoại khi đọc */}
+      <Stack screenOptions={{ headerShown: false, animation: 'fade' }}>
+        <Stack.Screen name="[chapterId]" />
+      </Stack>
+    </>
   );
 }
